@@ -1,0 +1,81 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 1200px;
+  background-color: #f4f6f7;
+  text-align: center;
+  padding: 1%;
+  margin: 2% auto;
+}
+.header ul {
+  list-style-type: none;
+  display: inline-flex;
+}
+.header ul a {
+  text-decoration: none;
+  color: #f70505;
+  animation: text 8s ease-in-out infinite;
+}
+@keyframes text {
+  33% {
+    color: #cc0404;
+  }
+  66% {
+    color: #770202;
+  }
+}
+
+form {
+  max-width: 600px;
+  background-color: #f4f6f7;
+  margin: 2% auto;
+  padding: 2rem 1rem;
+}
+form a {
+  text-decoration: none;
+  color: black;
+}
+form .title {
+  text-align: center;
+}
+form .mb-3 {
+  border-radius: 0 !important;
+  padding-bottom: 1rem;
+}
+form .mb-3 .warning {
+  color: red;
+}
+form .btn {
+  margin-left: 1rem;
+}
+form .btn button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 0;
+  margin-bottom: 1rem;
+  margin-left: 0;
+}
+form .btn button:hover {
+  background-color: red;
+  border: none;
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    max-width: 720px;
+  }
+  .header h1 {
+    display: none;
+  }
+  .header ul li {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=loginRegister.css.map */

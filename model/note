@@ -1,0 +1,30 @@
+cmd shift p de mo sass live
+
+CSS:
+aspect-ratio
+flex: https://flexboxfroggy.com/
+grid
+position
+transition
+transform
+
+/////Question
+1. hoi ve axios, swagger, headers & header
+
+2. phan nav.js hoi ve products.products
+3. phan home.shop.page contact khong chinh ra giua duoc. boostrap itsel justify content la center roi
+4. cart.scss : button transition is too fast
+5.  justify-content: center; ngang
+    align-items: center; doc
+    alight-self la gi
+
+//// 
+2 float lai khong duoc a?
+
+cart js. phan #sub. dung margin-right : 0 , khong duoc
+
+*transform : scaleY(1)
+
+///Position.
+body : always positive
+fixed (chay theo viewport, can be moving) >< absolute (stay only at that position)  : sua theo parent element (which is relative)

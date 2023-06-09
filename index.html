@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/4855e40ed4.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/loading.css">
+
+</head>
+<title>HomeDestry</title>
+</head>
+<body>
+ <div id="loading">
+  <div id="ring"></div>
+  <span id="span">loading...</span>
+</div>
+  <!----------NAV BAR start--------->
+  <nav id="main-nav">
+    <div class="logo-nav"><a href="/index.html">DESTRY</a></div>
+  <!-- main.menu start-->
+    <div class="menu-nav">
+      <ul class="main-menu">
+        <li class="main-menu-item">Home<i class="fa-solid fa-angle-down"></i>
+          <ul class="menu-links">
+            <li class="menu-link-a"><a href="">Home 1</a></li>
+            <li class="menu-link-a"><a href="">Home 2</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-item">Shop<i class="fa-solid fa-angle-down"></i>
+          <ul class="menu-links">
+            <li class="menu-link-a"><a href="">Shop 1</a></li>
+            <li class="menu-link-a"><a href="">Shop 2</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-item">Pages<i class="fa-solid fa-angle-down"></i>
+          <ul class="menu-links">
+            <li class="menu-link-a"><a href="">About</a></li>
+            <li class="menu-link-a"><a href="">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-item">Blog<i class="fa-solid fa-angle-down"></i>
+          <ul class="menu-links">
+            <li class="menu-link-a"><a href="">Details</a></li>
+            <li class="menu-link-a"><a href="">Styles</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-item">Contact</li>
+      </ul>
+    </div>
+    <!-- main-menu-end -->
+    <!-- action-nav start -->
+    <div class="action-nav">
+      <ul class="action-menu">
+        <li id="search-icon" class="action-menu-icon"> 
+          <i class="fa-solid fa-magnifying-glass"></i>     
+        </li>
+        <li id="user-icon" class="action-menu-icon"><i class="fa-solid fa-user"></i><i class="fa-solid fa-angle-down"></i>
+          <ul id="user-list">
+            <li><a class="user-a" href="/views/login.html">Log in</a></li>
+            <li><a class="user-a" href="/views/register.html">Register</a></li>
+          </ul>
+        </li>
+        <li class="action-menu-icon"><a href="/views/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <span id="numCart">0</span>
+        </li>     
+        <li id="hamburger-section" class="action-menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </li>
+      </ul>
+    </div>
+    <!-- action-nav end -->
+    <!-- MODAL SEARCH  start-->
+    <aside id="modalSearch">
+     <div id="search-section">
+       <input type="text" id="searchInput" placeholder="Search here...">
+       <button id="closeModalSearch"><i class="fa-solid fa-xmark"></i></button>    
+     </div>     
+      <div id="searchResult"></div>
+    </aside>
+    <!-- MODAL SEARCH  end-->
+    <aside id="hamburger-content">
+      <div id="opacity"></div>
+      <!-- hamburger content start -->
+      <div class="hamburger-menu">
+          <div id="close-hamburger" class="hamburger-item"><i class="fa-solid fa-xmark"></i></div>
+          <ul class="hamburger-item">
+            <li class="hamburger-title">
+              Home
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <li class="hamburger-links">
+              <p class="hamburger-link-a"><a href="">Home 1</a></p>
+              <p class="hamburger-link-a"><a href="">Home 2</a></p>
+            </li>
+          </ul>
+          <ul class="hamburger-item">
+            <li class="hamburger-title">
+              Shop
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <li class="hamburger-links">
+              <p class="hamburger-link-a"><a href="">Shop 1</a></p>
+              <p class="hamburger-link-a"><a href="">Shop 2</a></p>
+            </li>
+          </ul>
+          <ul class="hamburger-item">
+            <li class="hamburger-title">
+              Pages
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <li class="hamburger-links">
+              <p class="hamburger-link-a"><a href="">About</a></p>
+              <p class="hamburger-link-a"><a href="">FAQ</a></p>
+            </li>
+          </ul>
+          <ul class="hamburger-item">
+           <li class="hamburger-title">
+             Blog
+             <i class="fa-solid fa-angle-down"></i>
+           </li>
+            <li class="hamburger-links">
+              <p class="hamburger-link-a"><a href="">Details</a></p>
+              <p class="hamburger-link-a"><a href="">Styles</a></p>
+            </li>
+          </ul>
+          <ul class="hamburger-item">
+            <li class="hamburger-title">
+              Contact
+            </li>
+          </ul>
+      </div>
+      <!-- hamburger content -->
+    </aside>
+  </nav>
+  <!-- HAMBURGUR SECTION START -->
+  <!-- HAMBURGUR SECTION END -->
+  <!---------NAV BAR end------------>
+  <!--------------SLIDE START----------------->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1">
+      </button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2">
+      </button>
+    </div>
+    <div id="slide" class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://htmldemo.net/destry/destry/assets/images/slider/slide-1.jpg" class="-block w-100" alt="#">
+        <div class="carousel-caption -none -md-block slide-content">
+          <h1 data-aos="fade-up">Fashion New <br> Collection</h1>
+            <p data-aos="fade-up" data-aos-delay="50">Up to 70% of selected Prodect</p>
+            <a href="#" class="btn btn-danger stretched-link" data-aos="fade-up" data-aos-delay="100">Shop Now</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://htmldemo.net/destry/destry/assets/images/slider/slide-1-2.jpg" class="-block w-100" alt="#">
+        <div class="carousel-caption -none -md-block slide-content">
+          <h1 data-aos="fade-up">Second slide label</h1>
+          <p data-aos="fade-up" data-aos-delay="50">Up to 30% of selected Prodect</p>
+          <a data-aos="fade-up" href="#" class="btn btn-danger stretched-link" data-aos-delay="100">Shop Now</a>
+        </div>
+      </div>
+   </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+  <!-------------SLIDE END------------------>
+
+   <!-------------SMALL BANNERS START------------------>
+    <div id="small_banner" class="d-flex justify-content-center">
+      <div data-aos="fade-up" data-aos-delay="50" class="p-2">
+        <div class="img-cover">
+          <img src="https://htmldemo.net/destry/destry/assets/images/icons/feature-icon-2.png" alt="#">
+        </div>
+        <div class="info">
+          <h5>FREE SHIPPING</h5>
+          <p>Free shipping on all order</p>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="p-2">
+        <div class="img-cover">
+          <img src="https://htmldemo.net/destry/destry/assets/images/icons/feature-icon-3.png" alt="#">
+        </div>
+        <div class="info">
+          <h5>SUPPORT 24/7</h5>
+          <p>Support 24 hours a day</p>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="150" class="p-2">
+        <div class="img-cover">
+          <img src="https://htmldemo.net/destry/destry/assets/images/icons/feature-icon-4.png" alt="#">
+        </div>
+        <div class="info">
+          <h5>MONEY RETURN</h5>
+          <p>Back guarantee under 5 days</p>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" class="p-2">
+        <div class="img-cover">
+          <img src="https://htmldemo.net/destry/destry/assets/images/icons/feature-icon-1.png" alt="#">
+        </div>
+        <div class="info">
+          <h5>ORDER DISCOUNT</h5>
+          <p>Onevery order over $150</p>
+        </div>
+      </div>
+    </div>
+    <!-------------SMALL BANNER END------------------>
+ 
+  <!-- SECTION FEATURE 1 END -->
+   <!--------------TWO BANNER START----------------->
+  <div id="two-banner" class="container d-flex">
+        <div class="card p-2"  data-aos="fade-right" >
+          <img src="https://htmldemo.net/destry/destry/assets/images/banner/banner-4.jpg"  alt="">
+          <div class="card-img-overlay">
+            <h4 class="card-text">Up to <span>50%</span> off</h4>
+            <h3 class="card-title">Clothing</h3>
+            <a href="#" class="btn btn-danger ">Shop Now</a>
+          </div>
+        </div>
+        <div class="card p-2"  data-aos="fade-left">
+          <img src="https://htmldemo.net/destry/destry/assets/images/banner/banner-5.jpg"  alt="#">
+          <div class="card-img-overlay">
+            <h4 class="card-text">Up to <span>40%</span> off</h4>
+            <h3 class="card-title">Shoes</h3>
+            <a href="#" class="btn btn-danger ">Shop Now</a>
+          </div>
+    </div>
+  </div>
+      <!-------------TWO BANNER END------------------>
+
+      <!------------ SECTION PRODUCTS START ---------------->
+   <div id="products" class="container">
+        <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+          <li data-aos="fade-up" class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-new-tab" data-bs-toggle="pill" data-bs-target="#pills-new"
+              type="button" role="tab" aria-controls="pills-new" aria-selected="true">New Arrivals</button>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="50" class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-best-tab" data-bs-toggle="pill" data-bs-target="#pills-best" type="button"
+              role="tab" aria-controls="pills-best" aria-selected="false">Best Sellers</button>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="100" class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-sale-tab" data-bs-toggle="pill" data-bs-target="#pills-sale" type="button"
+              role="tab" aria-controls="pills-sale" aria-selected="false">Sale Items</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="nav-tabContent">
+          <!-- new arrivals item start -->
+          <div class="tab-pane fade show active" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab"
+          tabindex="0"></div>
+        <!-- best seller item start -->
+        <div class="tab-pane fade" id="pills-best" role="tabpanel" aria-labelledby="pills-best-tab" tabindex="0"></div>         
+        <!-- sale off start -->
+        <div class="tab-pane fade" id="pills-sale" role="tabpanel" aria-labelledby="pills-sale-tab" tabindex="0"></div>
+        </div>    
+    </div>
+          
+  <!---------------SECTION PRODUCTS END--------------->
+
+      <!--------- FULL BANNER START ------------->
+  <div id="fullbanner" class="row" data-aos="fade-up" >
+    <div id="carouselExampleDark" class="carousel carousel-dark col-12" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <img src="https://htmldemo.net/destry/destry/assets/images/banner/big-banner.jpg" class="d-block w-100"alt="#">
+      </div>
+    </div>
+  </div>
+      <!-- ---------FULL BANNER END------------->
+
+      <!---------THREE BANNER START-------------->
+ <div id="three-banners" class="container text-start"> 
+    <div data-aos="fade-up" class="card">
+              <img src="https://htmldemo.net/destry/destry/assets/images/banner/banner-2.jpg" class="card-img" alt="#">
+              <div class="card-img-overlay ">
+                <p class="card-text">Ladies Bag</p>
+                <h5 class="card-title">Buy One Get One Free</h5>
+                <a href="#" class="btn btn-dark">Women</a> 
+              </div>
+            </div>
+    <div data-aos="fade-up" data-aos-delay="100" class="card">
+              <img src="https://htmldemo.net/destry/destry/assets/images/banner/banner-3.jpg" class="card-img" alt="#">
+              <div class="card-img-overlay ">
+                <p class="card-text">Smart Watch</p>
+                <h5 class="card-title">20% Off Smart Watch</h5>
+                <a href="#" class="btn btn-dark">Man</a>
+              </div>
+            </div>
+     <div data-aos="fade-up" data-aos-delay="200" class="card">
+              <img src="https://htmldemo.net/destry/destry/assets/images/banner/banner-1.jpg" class="card-img" alt="#">
+              <div class="card-img-overlay ">
+                <p class="card-text">Sun Hat</p>
+                <h5 class="card-title">Get Offer For Summer</h5>
+                <a href="#" class="btn btn-dark">Kid</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-------------THREE BANNER END------------->
+
+      <!------------DAILY DEALS START-------------->
+      <div id="daily-deal" class="container text-center">
+        <div class="section-title row">
+          <h1 data-aos="fade-right" class="text-start col">Daily Deals</h1>
+          <ul class="nav nav-pills mb-3 col " id="pills-tab" role="tablist">
+            <li data-aos="fade-left" class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-newDeal-tab" data-bs-toggle="pill" data-bs-target="#pills-newDeal"
+                type="button" role="tab" aria-controls="pills-newDeal" aria-selected="true">New Arrivals</button>
+            </li>
+            <li data-aos="fade-left" data-aos-delay="50" class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-bestDeal-tab" data-bs-toggle="pill" data-bs-target="#pills-bestDeal"
+                type="button" role="tab" aria-controls="pills-bestDeal" aria-selected="false">Best Sellers</button>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="100" class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-saleDeal-tab" data-bs-toggle="pill" data-bs-target="#pills-saleDeal"
+                type="button" role="tab" aria-controls="pills-saleDeal" aria-selected="false">Sale Items</button>
+            </li>
+          </ul>         
+        </div>
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane show active" id="pills-newDeal" role="tabpanel" aria-labelledby="pills-newDeal-tab"
+            tabindex="0">                    
+          </div>
+          <div class="tab-pane show" id="pills-bestDeal" role="tabpanel" aria-labelledby="pills-bestDeal-tab" tabindex="0"> 
+          </div>
+          <div class="tab-pane show" id="pills-saleDeal" role="tabpanel" aria-labelledby="pills-saleDeal-tab" tabindex="0"> 
+          </div>         
+        </div>       
+      </div>
+       <!-----------DAILY DEAL END--------------->
+
+       <!--------------LOGO START-------------->
+      <div id="logos" class=" align-items-center">
+          <div data-aos="fade-up" class="img-logo"><img src="https://htmldemo.net/destry/destry/assets/images/brand-logo/1.png" alt="#"></div>
+          <div data-aos="fade-up" data-aos-delay="50" class="img-logo off-logo"><img src="https://htmldemo.net/destry/destry/assets/images/brand-logo/2.png" alt="#"></div>
+          <div data-aos="fade-up" data-aos-delay="100" class="img-logo"><img src="https://htmldemo.net/destry/destry/assets/images/brand-logo/3.png" alt="#"></div>
+          <div data-aos="fade-up" data-aos-delay="150" class="img-logo off-logo"><img src="https://htmldemo.net/destry/destry/assets/images/brand-logo/4.png" alt="#"></div>
+          <div data-aos="fade-up" data-aos-delay="200" class="img-logo"><img src="https://htmldemo.net/destry/destry/assets/images/brand-logo/5.png" alt="#"></div>
+      </div>
+       <!------------LOGO END-------------->
+
+      <!------------BLOGS START-------------->
+      <div id="blog">
+        <h2 data-aos="fade-up" class="text-start border-bottom">Latest Blog</h2>
+        <div class="card-container">
+          <div data-aos="fade-up" data-aos-delay="50" class="card ">
+            <div class="img-cover">
+              <img src="https://htmldemo.net/destry/destry/assets/images/blog/blog-post/1.jpg" class="card-img-top"
+              alt="#">
+            </div>
+            <div class="card-body">
+              <span>By: Minh Tri /15 Dec 2022</span>
+              <h3 class="card-title">Some Winter Collections</h3>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, alias!</p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100" class="card ">
+            <div class="img-cover">
+              <img src="https://htmldemo.net/destry/destry/assets/images/blog/blog-post/3.jpg" class="card-img-top" alt="#">
+            </div>
+            <div class="card-body">
+              <span>By: Vuong Truong /15 Dec 2022</span>
+              <h3 class="card-title">Perfec Fashion House</h3>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, alias!</p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="150" class="card ">
+            <div class="img-cover">
+              <img src="https://htmldemo.net/destry/destry/assets/images/blog/blog-post/2.jpg" class="card-img-top" alt="#">
+            </div>
+            <div class="card-body">
+              <span>By: Bao Loc /15 Dec 2022</span>
+              <h3 class="card-title">My Perty Fashion</h3>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum,
+                aliasaaaaaaannnnnnnnn!</p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-----------BLOG END--------------->
+
+       <!-----------FOOTER START--------------->
+      <div id="footer">
+        <!-- info footer start -->
+        <div class="info">
+          <div class="details">
+            <h5 data-aos="fade-up">Contact Us</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+              <br>
+              <strong>Address:</strong> 123 Main Street, CA 12345 - USA.
+              <br>
+              <strong>Call to:</strong> (012) 800 456 789-987
+              <br>
+              <strong> Mail to:</strong> yourmail@example.com
+            </p>    
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="details">
+            <h5 data-aos="fade-up" data-aos-delay="50">Information</h5>
+            <a href="#" class="details-link">About Us</a> <br>
+            <a href="#" class="details-link">Delivery Information</a> <br>
+            <a href="#" class="details-link">Customer Services</a> <br>
+            <a href="#" class="details-link">Return Policy</a> <br>
+          </div>
+          <div class="details">
+            <h5 data-aos="fade-up" data-aos-delay="100">My Account</h5>
+            <a href="#" class="details-link">My Account</a> <br>
+            <a href="#" class="details-link">Wishlist</a> <br>
+            <a href="#" class="details-link">Help Center</a> <br>
+            <a href="#" class="details-link">Condition</a> <br>
+            <a href="#" class="details-link">Term of Use</a> <br>
+          </div>
+          <div class="details">
+            <h5 data-aos="fade-up" data-aos-delay="150">Newsletter</h5>
+            <p>Get E-mail updates about our latest shop and special offers.</p>
+            <form action="email">
+              <input type="text" placeholder="Enter your email here"><br>
+              <button type="submit" class="btn btn-danger">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <!-- info footer end -->
+
+        <!-- copyrightstart -->
+        <div class="bottom">
+          <p>
+            © 2022 <strong>Destry</strong> Made width <i class="fa-solid fa-heart text-danger"></i> by <strong>HasThemes.</strong>
+          </p>
+        </div>
+      </div>
+      <!-- copyright end -->
+      <!--------- FOOTER END------------------>
+
+      <!------------------ SCRIPT------------- -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+      <script src="/model/product.js"></script>
+      <script src="/model/cartModel.js"></script>
+      <script src="/controller/navbar.js"></script>
+      <script src="/controller/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/loginRegister.css">
+    <title>Register</title>
+</head>
+<body>
+  <!-- header start -->
+<div class="header">
+  <h1>Register</h1>
+  <ul>
+      <li><a href="/index.html">Home /</a></li>
+      <li>Register</li>
+  </ul>
+</div>
+<!-- header end -->
+
+<!-- register start -->
+<form id="register-form" onsubmit="handleRegister()">
+  <div class="title">
+    <h1>Create Account</h1>
+    <p>Please Register using account detail bellow.    </p>
+  </div>
+  <div class="mb-3">
+    <input id="register-name" type="text" class="form-control" placeholder="Enter your name">
+    <p class="warning" id="err-name"></p>
+  </div>
+  <div class="mb-3">
+    <input id="register-email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email or Username">
+    <p class="warning" id="err-email"></p>
+  </div>
+  <div class="mb-3">
+    <input id="register-pass" type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+    <p class="warning" id="err-pass"></p>
+  </div>
+  <div class="mb-3">
+    <input id="register-age" type="text" class="form-control" placeholder=" Enter your Age">
+    <p class="warning" id="err-age"></p>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Subscribe Our Newsletter</label>
+  </div>
+  <div class="btn">
+    <button type="submit" class="btn btn-primary">Register</button>
+  </div>
+</form>
+<!-- register end -->
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="/model/user.js"></script>
+  <script src="/model/validate.js"></script>
+  <script src="/controller/register.js"></script>
+</body>
+</html>

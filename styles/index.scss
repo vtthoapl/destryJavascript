@@ -1,0 +1,650 @@
+* {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* btn color: #DC3545 */
+}
+#carouselExampleDark {
+  width: 100%;
+  margin: auto;
+  z-index: 0;
+  #slide {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .slide-content {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      width: fit-content;
+      h1 {
+        font-size: 50px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 18px;
+      }
+      a {
+        &:hover {
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+#small_banner {
+  max-width: 1200px;
+  margin: 50px auto 0;
+  & > div {
+    display: flex;
+    gap: 10px;
+    div {
+      img {
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+          filter: brightness(1) grayscale(97%) contrast(12);
+        }
+      }
+    }
+    div {
+      h5 {
+        font-size: 25px;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+#two-banner {
+  margin: 100px auto;
+  overflow: hidden;
+  object-fit: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .card-img-overlay {
+    position: absolute;
+    left: 16px;
+    top: 60px;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  h4 {
+    color: rgb(113, 111, 111);
+  }
+  a:hover {
+    color: white;
+    background-color: black;
+    border-color: transparent;
+  }
+  span {
+    color: red;
+  }
+
+  div {
+    overflow: hidden;
+    img {
+      transition: all 0.1s linear;
+    }
+    &:hover {
+      cursor: pointer;
+      img {
+        transform: scale(1.2);
+        transition: all 0.5s linear;
+      }
+    }
+  }
+}
+/*Product 3 */
+#products {
+  margin: 100px auto;
+  max-width: 1200px;
+  & > ul {
+    justify-content: center;
+  }
+  .nav-item {
+    padding: 0 10px;
+    .nav-link {
+      position: relative;
+      color: black;
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+      &::after {
+        transition: all 0.2s linear;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        content: '';
+        background-color: red;
+      }
+      &.active {
+        background-color: transparent;
+        color: red;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .tab-content {
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .tab-pane {
+      display: none;
+      &.show.active {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+      .card {
+        width: calc((100% - 30px) / 4);
+        .card-img {
+          overflow: hidden;
+          img {
+            transition: all 0.3s ease 0s;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.2);
+              transition: all 0.5s ease 0s;
+            }
+          }
+        }
+        .card-body {
+          text-align: center !important;
+          .card-title {
+            text-align: center !important;
+            font-weight: 600;
+          }
+          .shopHereLink {
+            border: 1px solid #6c757d;
+            border-radius: 5%;
+            padding: 5px 10px 5px 10px;
+            transition: all 0.3 linear;
+            &:hover {
+              background-color: #dc3545;
+              color: white;
+              border: #6c757d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Fullbanner Product 4  */
+#fullbanner {
+  max-width: 1200px;
+  margin: 100px auto;
+  img {
+    cursor: pointer;
+    transition: all 0.1s linear;
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+      transition: all 0.5s linear; //this may be dont need
+    }
+  }
+}
+/* section 6 three banner */
+#three-banners {
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  column-gap: 10px;
+  .card {
+    overflow: hidden;
+    width: calc((100% - 20px) / 3);
+    &:hover {
+      cursor: pointer;
+      .card-img {
+        transform: scale(1.2);
+      }
+    }
+    .card-img {
+      transition: all 0.2s linear;
+    }
+  }
+}
+/* section 7 daily deal */
+#daily-deal {
+  max-width: 1200px;
+  .section-title {
+    margin: 15px 0 0;
+    padding: 0 0 15px;
+    & > ul {
+      justify-content: center;
+    }
+    .nav-item {
+      padding: 0 10px;
+      .nav-link {
+        position: relative;
+        color: black;
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+        &::after {
+          transition: all 0.2s linear;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          content: '';
+          background-color: red;
+        }
+        &.active {
+          background-color: transparent;
+          color: red;
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      display: none;
+      &.show.active {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+      .card {
+        width: calc((100% - 10px) / 2);
+        .card-link-img {
+          overflow: hidden;
+          .card-img {
+            transition: all 0.2s linear;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.2);
+              transition: all 0.5s ease 0s;
+            }
+          }
+        }
+        .card-body {
+          text-align: start;
+          .card-title {
+            color: #0084c5;
+            font-size: 18px;
+          }
+          .shopHereLink {
+            text-decoration: none;
+            color: #6c757d;
+            border: 1px solid #6c757d;
+            border-radius: 5%;
+            padding: 5px 10px 5px 10px;
+            transition: all 0.3 linear;
+            &:hover {
+              background-color: #dc3545;
+              color: white;
+              border: #6c757d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Section Logo 8 */
+#logos {
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly; //chieu ngang
+  align-items: center; // can theo chieu doc
+  .img-logo {
+    img {
+      transition: all 0.2s linear;
+      &:hover {
+        transform: scale(1.2);
+        transition: all 0.5s linear;
+      }
+    }
+  }
+}
+/* Section blog 9 */
+#blog {
+  max-width: 1200px;
+  margin: 100px auto;
+  .card-container {
+    margin: 0, auto;
+    display: flex;
+    column-gap: 10px;
+    h3,
+    p {
+      &:hover {
+        color: red;
+      }
+    }
+    .btn {
+      background-color: black;
+      border: none;
+      color: white;
+      &:hover {
+        background-color: red;
+        border: none;
+      }
+    }
+    .card {
+      width: calc((100% - 20px) / 3);
+      .img-cover {
+        overflow: hidden;
+        .card-img-top {
+          object-fit: cover;
+          transition: all 0.2s linear; 
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.2) rotate(5deg);
+          }
+        }
+      }
+    }
+  }
+}
+/* Section footer */
+#footer {
+  max-width: 1200px;
+  background-color: rgb(247, 245, 245);
+  width: 100%;
+  margin: 50px auto;
+  .info{
+    i { padding-inline-end: 1.5rem;}
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 100px 50px;
+    line-height: 2em;
+    .details{
+      min-width: 20%;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      input{
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        margin-bottom: 2em;
+        width: 100%;
+        background-color: transparent;
+      }
+    }
+
+  } 
+  .bottom {
+    background-color: rgb(229, 226, 226);
+    margin-bottom: 0;
+    p {
+      text-align: center;
+      padding: 5px;
+      i { padding-inline-end: 0;}
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #small_banner {
+    max-width: 960px;
+  }
+  #two-banner {
+    max-width: 960px;
+  }
+  #products {
+    max-width: 960px;
+  }
+  #three-banners {
+    max-width: 960px;
+  }
+  #daily-deal {
+    max-width: 960px;
+  }
+  #logos {
+    max-width: 960px;
+  }
+  #blog {
+    max-width: 960px;
+  }
+  #footer{
+    max-width: 960px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #small_banner {
+    max-width: 720px;
+    flex-wrap: wrap;
+    & > div {
+      width: 50%;
+      .info{
+        h5{
+         font-size: 16px;
+        }
+        p{
+          font-size: 14px;
+        }   
+      }
+    }
+  }
+  #two-banner {
+    max-width: 720px;
+    .card-title, .card-text{
+      font-size: 18px;
+    }
+    p, a{
+      font-size: 16px;
+    }
+  }
+  #products {
+    max-width: 720px;
+    .tab-content {
+      .tab-pane {
+        flex-wrap: wrap;
+        .card {
+          width: calc((100% - 20px) / 3);
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  #three-banners {
+    max-width: 720px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    h5{
+      font-size: 18px;
+    }
+    a, .btn{
+      font-size: 14px;
+    }
+  }
+  #daily-deal {
+    max-width: 720px;
+    .card{
+      .card-body{
+        p, a{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  #logos {
+    max-width: 720px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    .img-logo {
+      width: calc((100% - 10px) / 3);
+      text-align: center;
+    }
+  }
+  #blog {
+    max-width: 720px;
+    .card-container {
+      flex-wrap: wrap;
+      row-gap: 10px;
+      .card {
+        width: calc((100% - 10px) / 2);
+        .card-body{
+          .card-title{
+            font-size: 18px;
+          }
+        span, .btn, .card-text{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  #footer{
+    max-width: 720px;
+    .info{
+      flex-wrap: wrap;
+      row-gap: 50px;  
+      .details{
+        width: calc((100% - 30px) / 2);
+        a, p , .btn{
+          font-size: 14px;
+        }
+      }
+    }   
+  }
+}
+@media only screen and (max-width: 768px) {
+  #carouselExampleDark {
+    width: 100%;
+      #slide{
+        .slide-content {
+          top: 5%;
+          padding: 0;
+          h1 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+          }
+          a{font-size: 14px;}
+        }
+      }
+    
+  }
+  #small_banner {
+    max-width: 540px;
+    & > div {
+      width: 100%;
+      .info{
+        h5{
+         font-size: 16px;
+        }
+        p{
+          font-size: 14px;
+        }   
+      }
+  }
+}
+  #two-banner {
+    max-width: 540px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    .card {
+      width: 100%;
+    }
+  }
+  #products {
+    max-width: 540px;
+    margin: 50px auto;
+    .tab-content {
+      .tab-pane {
+        flex-wrap: wrap;
+        .card {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #fullbanner{
+    max-width: 540px;
+    margin: 50px auto;
+  }
+  #three-banners {
+    max-width: 540px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    .card {
+      width: 100%;
+    }
+  }
+  #daily-deal {
+    max-width: 540px;
+    margin: 50px auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    .tab-content {
+      .tab-pane {
+        .card {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #logos {
+    max-width: 540px;
+    margin: 50px auto;
+    .img-logo {
+      width: 100%;
+      &.off-logo{
+        display: none;
+      }
+    }
+  }
+  #blog {
+    max-width: 540px;
+    margin: 50px auto;
+    .card-container {
+      .card {
+        width: 100%;
+      }
+    }
+  }
+  #footer{
+    max-width: 540px;
+    margin: 0 auto;
+    .info{
+      padding: 50px;
+      .details{
+        width: 100%;
+      }
+    }
+    .bottom p{
+        margin-bottom: 0;
+    }
+  }
+}

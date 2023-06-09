@@ -1,0 +1,151 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main-nav .action-nav .action-menu #search-icon {
+  display: none;
+}
+
+#body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#body a {
+  color: black;
+}
+#body #main th,
+#body #main td {
+  vertical-align: middle;
+  text-align: center;
+}
+#body #main img {
+  width: 100px;
+}
+#body #main .chooseQuantity {
+  display: flex;
+  padding: 2px 5px;
+  justify-content: center;
+  align-items: center;
+}
+#body #main .chooseQuantity p {
+  margin: 10px;
+}
+#body #main .chooseQuantity button {
+  padding: 0 10px;
+  border: 1px solid black;
+  background-color: rgb(236, 234, 234);
+  color: black;
+  transition: all 0.2 linear;
+}
+#body #main .chooseQuantity button:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
+#body #main #icons {
+  transition: all 0.2 linear;
+}
+#body #main #icons:hover {
+  cursor: pointer;
+  color: red;
+}
+#body #coupon {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(236, 234, 234);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 0;
+  align-items: center;
+}
+#body #coupon #discount-input {
+  padding: 5px 30px;
+  outline: none;
+  width: 30vw;
+}
+#body #coupon #couponSubmit,
+#body #coupon button {
+  padding: 5px 30px;
+  border: none;
+  background-color: black;
+  color: white;
+  transition: all 0.2 linear;
+}
+#body #coupon #couponSubmit:hover,
+#body #coupon button:hover {
+  background-color: red;
+}
+#body #sub {
+  width: 40vw;
+  float: right;
+  margin-bottom: 3rem;
+}
+#body #sub #cart-total {
+  background-color: #f4f6f7;
+  margin-bottom: 0;
+}
+#body #sub #cart-total #final-total {
+  color: red;
+}
+#body #sub button {
+  width: 100%;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  transition: all 0.2s linear;
+}
+#body #sub button:hover {
+  background-color: red !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  #body {
+    max-width: 960px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #body {
+    max-width: 720px;
+    font-size: 12px;
+  }
+  #body #coupon {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    max-width: 540px;
+    font-size: 14px;
+  }
+  #body {
+    max-width: 540px;
+  }
+  #body #main .active {
+    display: none;
+  }
+  #body #coupon {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: flex-start;
+  }
+  #body #coupon #coupon-input {
+    width: 100%;
+  }
+  #body #coupon #coupon-input > * {
+    width: 100%;
+  }
+  #body #coupon #coupon-input > *:first-child {
+    margin-bottom: 10px;
+  }
+  #body #sub {
+    width: 100%;
+    padding: 0 5%;
+    margin: 1rem auto 3rem;
+  }
+}/*# sourceMappingURL=cart.css.map */
