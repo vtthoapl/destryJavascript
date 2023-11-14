@@ -33,6 +33,7 @@
       column-gap: 2vw;
       .main-menu-item {
         position: relative;
+        cursor: pointer;
         &:hover {
           color: #ff4545;
           &::after {
@@ -88,6 +89,7 @@
       column-gap: 3vw;
       font-size: 25px;
       .action-menu-icon {
+        cursor: pointer;
         a {
           color: black;
           text-decoration: none;
