@@ -32,8 +32,8 @@
       align-items: center;
       column-gap: 2vw;
       .main-menu-item {
-        position: relative;
         cursor: pointer;
+        position: relative;
         &:hover {
           color: #ff4545;
           &::after {
